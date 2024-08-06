@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  /* display: flex; */
+}
+
+.battle {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d843fov-5ad2d436-789b-48f4-91ac-7a553ca26306.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJmYjI4MjFhLTE0MDYtNGExZC05YjA0LTY2NjhmMjc4ZTk0NFwvZDg0M2Zvdi01YWQyZDQzNi03ODliLTQ4ZjQtOTFhYy03YTU1M2NhMjYzMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4WU23QrSu_7CD6c4MJIYPEeIvE5o8maEEkqYM40mwus");
+  /* Replace with actual URL */
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  width: 50%;
+  height: 90vh;
+}
+
+.pokemon-selection,
+.battle {
+  margin-top: 20px;
+}
+
+.pokemon-list button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.pokemon-status {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.pokemon-status div img.attacking {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+.life-bar-container {
+  width: 100px;
+  height: 10px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  margin: 5px auto;
+  position: relative;
+}
+
+.life-bar {
+  height: 100%;
+  background-color: #4caf50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+li {
+  list-style: none;
+  text-align: start;
+  border-bottom: 1px solid gray;
+  padding: 2px;
+  font-size: 13px;
+}
+
+.attack-logs {
+  width: 50%;
+  height: 90vh;
+  overflow: auto;
+}
